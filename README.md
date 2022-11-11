@@ -24,6 +24,12 @@ space()
 
 
 
+## License
+
+Streamlit Space has an MIT license, as found in the [LICENSE](https://github.com/imyizhang/streamlit-space/blob/main/LICENSE) file.
+
+
+
 ## Documentation
 
 ### streamlit_space.space
@@ -43,9 +49,7 @@ Add blank lines to Streamlit app.
 
 
 
-## License
-
-Streamlit Space has an MIT license, as found in the [LICENSE](https://github.com/imyizhang/streamlit-space/blob/main/LICENSE) file.
+## Changelog
 
 
 

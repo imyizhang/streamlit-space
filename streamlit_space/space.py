@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Space component for Streamlit."""
+"""Spacing component for Streamlit"""
 
 from typing import Any, Optional
+
 import streamlit as st
 
 

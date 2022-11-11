@@ -19,11 +19,11 @@ MD = '''[![Open in Streamlit][share_badge]][share_link] [![GitHub][github_badge]
 def app():
     st.set_page_config(
         layout='centered',
-        page_icon='✨',
+        page_icon='⬜',
         page_title='Streamlit Space',
     )
     st.title('Streamlit Space')
-    st.sidebar.title('Space')
+    st.sidebar.title('Spacing')
     lines = st.sidebar.slider('lines', 0, 10, 5, 1)
     space(st.sidebar)
     st.sidebar.caption(f'Streamlit {st.__version__}')
