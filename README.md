@@ -55,5 +55,5 @@ Streamlit Space has an MIT license, as found in the [LICENSE](https://github.com
 [github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
 [github_link]: https://github.com/imyizhang/streamlit-space
 
-[pypi_badge]: https://badgen.net/pypi/v/streamlit-space?icon=pypi&color=black&label
+[pypi_badge]: https://badgen.net/pypi/v/streamlit-space?icon=pypi&color=black&label?
 [pypi_link]: https://www.pypi.org/project/streamlit-space
