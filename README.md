@@ -42,8 +42,8 @@ Add blank lines to Streamlit app.
 
 **Parameters**:
 
-* **container**: The Streamlit container. Defaults to `None`.
-* **lines**: The number of blank lines to be added. Defaults to `1`.
+* **container** (any, optional): The Streamlit container. Defaults to `None`.
+* **lines** (int, optional): The number of blank lines to be added. Defaults to `1`.
 
 
 
