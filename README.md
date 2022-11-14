@@ -17,8 +17,10 @@ pip install streamlit-space
 ## Quickstart
 
 ```python
+import streamlit as st
 from streamlit_space import space
 
+st.title('Streamlit Space')
 space()
 ```
 
@@ -40,8 +42,8 @@ Add blank lines to Streamlit app.
 
 **Parameters**:
 
-* **container**: Streamlit container. Default: `None`.
-* **lines**: number of blank lines to be added. Default: `1`.
+* **container**: The Streamlit container. Defaults to `None`.
+* **lines**: The number of blank lines to be added. Defaults to `1`.
 
 
 
@@ -50,6 +52,10 @@ Add blank lines to Streamlit app.
 
 
 ## Changelog
+
+Version 0.1.0:
+
+* Made spacing component functional
 
 
 

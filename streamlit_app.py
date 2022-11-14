@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_space import space
 
 
-MD = '''[![Open in Streamlit][share_badge]][share_link] [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
+BADGE = '''[![Open in Streamlit][share_badge]][share_link] [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
 
 [share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
 [share_link]: https://share.streamlit.io/imyizhang/streamlit-space/main/streamlit_app.py
@@ -13,21 +13,34 @@ MD = '''[![Open in Streamlit][share_badge]][share_link] [![GitHub][github_badge]
 [github_link]: https://github.com/imyizhang/streamlit-space
 
 [pypi_badge]: https://badgen.net/pypi/v/streamlit-space?icon=pypi&color=black&label
-[pypi_link]: https://www.pypi.org/project/streamlit-space'''
+[pypi_link]: https://www.pypi.org/project/streamlit-space
+'''
+
+
+QUICKSTART = '''import streamlit as st
+from streamlit_space import space
+
+st.title('Streamlit Space')
+space()
+'''
 
 
 def app():
+    # config
     st.set_page_config(
-        layout='centered',
-        page_icon='⬜',
         page_title='Streamlit Space',
+        page_icon='⬜',
+        layout='centered',
+        initial_sidebar_state='auto',
     )
-    st.title('Streamlit Space')
+    # sidebar
     st.sidebar.title('Spacing')
     lines = st.sidebar.slider('lines', 0, 10, 5, 1)
     space(st.sidebar)
     st.sidebar.caption(f'Streamlit {st.__version__}')
-    st.markdown(MD)
+    # page
+    st.title('Streamlit Space')
+    st.markdown(BADGE)
     space()
     st.write('Add blank lines to your Streamlit app.')
     space(lines=lines)
@@ -35,12 +48,7 @@ def app():
     st.code('pip install streamlit-space', language='bash')
     space(lines=lines)
     st.header('Quickstart')
-    st.code(
-        '''from streamlit_space import space
-
-        space()''',
-        language='python',
-    )
+    st.code(QUICKSTART, language='python')
     space(lines=lines)
     st.header('License')
     st.write('Streamlit Space has an MIT license, as found in the [LICENSE](https://github.com/imyizhang/streamlit-space/blob/main/LICENSE) file.')

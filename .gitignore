@@ -9,6 +9,7 @@ dist/
 
 # Streamlit
 .streamlit/
+#.streamlit/secrets.toml
 
 # Desktop Services Store
 .DS_Store
