@@ -3,7 +3,6 @@
 import streamlit as st
 from streamlit_space import space
 
-
 BADGE = '''[![Open in Streamlit][share_badge]][share_link] [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
 
 [share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
@@ -15,7 +14,6 @@ BADGE = '''[![Open in Streamlit][share_badge]][share_link] [![GitHub][github_bad
 [pypi_badge]: https://badgen.net/pypi/v/streamlit-space?icon=pypi&color=black&label
 [pypi_link]: https://www.pypi.org/project/streamlit-space
 '''
-
 
 QUICKSTART = '''import streamlit as st
 from streamlit_space import space
@@ -35,7 +33,7 @@ def app():
     )
     # sidebar
     st.sidebar.title('Spacing')
-    lines = st.sidebar.slider('lines', 0, 10, 5, 1)
+    lines = st.sidebar.slider('lines', 0, 10, 2, 1)
     space(st.sidebar)
     st.sidebar.caption(f'Streamlit {st.__version__}')
     # page
@@ -51,7 +49,9 @@ def app():
     st.code(QUICKSTART, language='python')
     space(lines=lines)
     st.header('License')
-    st.write('Streamlit Space has an MIT license, as found in the [LICENSE](https://github.com/imyizhang/streamlit-space/blob/main/LICENSE) file.')
+    st.write(
+        'Streamlit Space has an MIT license, as found in the [LICENSE](https://github.com/imyizhang/streamlit-space/blob/main/LICENSE) file.'
+    )
 
 
 if __name__ == '__main__':
