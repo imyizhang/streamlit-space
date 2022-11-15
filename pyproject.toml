@@ -9,7 +9,7 @@ homepage = "https://st-space.streamlit.app"
 repository = "https://github.com/imyizhang/streamlit-space"
 
 [tool.poetry.dependencies]
-python = ">=3.7, !=3.9.7"
+python = ">=3.7,<3.9.7 || >3.9.7,<4.0"
 streamlit = "==1.14.1"
 
 [build-system]
